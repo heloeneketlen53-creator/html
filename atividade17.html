@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade17</title>
+</head>
+<body>
+
+    <h1>pratica do uso do const</h1>
+  <p> enteder valores que nao pode ser alterados. </p>
+
+    <label for="">digite seu nome</label>
+    <input type="text" id="nome">
+ 
+
+    <label for="">digite sua idade</label>
+     <input type="text" id="idade">
+
+
+    <button onclick="mostrar()">mostrar</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+        const sistema = "sistema escolar";
+
+     function mostrar() {
+        let nome = document.getElementById ("nome").value;
+       let idade = document.getElementById ("idade").value;
+
+       document.getElementById ("resultado").innerHTML =  " bem-vindo " + nome + " que legal! voce tem " + idade + " anos. com o nosso " +sistema;
+
+
+
+     }
+
+
+    </script>
+</body>
+</html>
